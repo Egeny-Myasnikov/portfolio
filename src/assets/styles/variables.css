@@ -1,0 +1,157 @@
+:root {
+	/* Font families */
+	--font-primary: var(--font-inter);
+	--font-mono: var(--font-roboto-mono);
+
+	/* Colors - Gray scale */
+	--color-white: #ffffff;
+	--color-gray-50: #f9fafb;
+	--color-gray-100: #f3f4f6;
+	--color-gray-200: #e5e7eb;
+	--color-gray-300: #d1d5db;
+	--color-gray-400: #9ca3af;
+	--color-gray-500: #6b7280;
+	--color-gray-600: #4b5563;
+	--color-gray-700: #374151;
+	--color-gray-800: #1f2937;
+	--color-gray-900: #111827;
+
+	/* Colors - Blue scale */
+	--color-blue-50: #eff6ff;
+	--color-blue-100: #dbeafe;
+	--color-blue-200: #bfdbfe;
+	--color-blue-300: #93c5fd;
+	--color-blue-400: #60a5fa;
+	--color-blue-500: #3b82f6;
+	--color-blue-600: #2563eb;
+	--color-blue-700: #1d4ed8;
+	--color-blue-800: #1e40af;
+	--color-blue-900: #1e3a8a;
+
+	/* Semantic colors - Light theme (default) */
+	--color-primary: var(--color-blue-600);
+	--color-primary-hover: var(--color-blue-700);
+	--color-text: var(--color-gray-900);
+	--color-text-light: var(--color-gray-600);
+	--color-text-muted: var(--color-gray-500);
+	--color-border: var(--color-gray-200);
+	--color-border-light: var(--color-gray-100);
+	--color-background: var(--color-white);
+	--color-background-alt: var(--color-gray-50);
+	--color-background-card: var(--color-white);
+	--color-background-header: rgba(255, 255, 255, 0.8);
+	--color-shadow: rgba(0, 0, 0, 0.1);
+
+	/* Gradients */
+	--gradient-hero: linear-gradient(
+		135deg,
+		var(--color-blue-50) 0%,
+		var(--color-white) 100%
+	);
+
+	/* Spacing */
+	--space-xs: 0.25rem;
+	--space-sm: 0.5rem;
+	--space-md: 1rem;
+	--space-lg: 1.5rem;
+	--space-xl: 2rem;
+	--space-2xl: 3rem;
+	--space-3xl: 4rem;
+
+	/* Border radius */
+	--radius-sm: 0.25rem;
+	--radius-md: 0.5rem;
+	--radius-lg: 0.75rem;
+	--radius-xl: 1rem;
+
+	/* Shadows */
+	--shadow-sm: 0 1px 2px 0 var(--color-shadow);
+	--shadow-md: 0 4px 6px -1px var(--color-shadow),
+		0 2px 4px -2px var(--color-shadow);
+	--shadow-lg: 0 10px 15px -3px var(--color-shadow),
+		0 4px 6px -4px var(--color-shadow);
+
+	/* Transitions */
+	--transition-fast: 0.15s ease;
+	--transition-normal: 0.3s ease;
+	--transition-slow: 0.5s ease;
+
+	/* Container */
+	--container-max-width: 1200px;
+	--container-padding: 1.25rem;
+
+	/* Z-index */
+	--z-dropdown: 1000;
+	--z-sticky: 1020;
+	--z-fixed: 1030;
+	--z-modal: 1040;
+	--z-popover: 1050;
+	--z-tooltip: 1060;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* Semantic colors - Dark theme */
+		--color-primary: var(--color-blue-400);
+		--color-primary-hover: var(--color-blue-300);
+		--color-text: var(--color-gray-100);
+		--color-text-light: var(--color-gray-300);
+		--color-text-muted: var(--color-gray-400);
+		--color-border: var(--color-gray-700);
+		--color-border-light: var(--color-gray-600);
+		--color-background: var(--color-gray-900);
+		--color-background-alt: var(--color-gray-800);
+		--color-background-card: var(--color-gray-800);
+		--color-background-header: rgba(17, 24, 39, 0.8);
+		--color-shadow: rgba(0, 0, 0, 0.3);
+
+		/* Gradients for dark theme */
+		--gradient-hero: linear-gradient(
+			135deg,
+			var(--color-gray-800) 0%,
+			var(--color-gray-900) 100%
+		);
+	}
+}
+
+/* Optional: Force dark/light theme with class */
+.dark-theme {
+	--color-primary: var(--color-blue-400);
+	--color-primary-hover: var(--color-blue-300);
+	--color-text: var(--color-gray-100);
+	--color-text-light: var(--color-gray-300);
+	--color-text-muted: var(--color-gray-400);
+	--color-border: var(--color-gray-700);
+	--color-border-light: var(--color-gray-600);
+	--color-background: var(--color-gray-900);
+	--color-background-alt: var(--color-gray-800);
+	--color-background-card: var(--color-gray-800);
+	--color-background-header: rgba(17, 24, 39, 0.8);
+	--color-shadow: rgba(0, 0, 0, 0.3);
+	--gradient-hero: linear-gradient(
+		135deg,
+		var(--color-gray-800) 0%,
+		var(--color-gray-900) 100%
+	);
+}
+
+.light-theme {
+	--color-primary: var(--color-blue-600);
+	--color-primary-hover: var(--color-blue-700);
+	--color-text: var(--color-gray-900);
+	--color-text-light: var(--color-gray-600);
+	--color-text-muted: var(--color-gray-500);
+	--color-border: var(--color-gray-200);
+	--color-border-light: var(--color-gray-100);
+	--color-background: var(--color-white);
+	--color-background-alt: var(--color-gray-50);
+	--color-background-card: var(--color-white);
+	--color-background-header: rgba(255, 255, 255, 0.8);
+	--color-shadow: rgba(0, 0, 0, 0.1);
+	--gradient-hero: linear-gradient(
+		135deg,
+		var(--color-blue-50) 0%,
+		var(--color-white) 100%
+	);
+}

@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Портфолио - Евгений Мясников
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-15.0-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
+![Docker](https://img.shields.io/badge/Docker-✓-blue?style=for-the-badge&logo=docker)
+![CI/CD](https://img.shields.io/badge/CI/CD-GitHub%20Actions-blue?style=for-the-badge&logo=github)
 
-First, run the development server:
+Персональное портфолио фронтенд разработчика с современным стеком технологий и автоматическим деплоем.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**🌐 Live Demo:** [https://e-myasnikov.ru](https://e-myasnikov.ru)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Особенности
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ⚡ **Next.js 15** с App Router
+- 🎨 **CSS Modules** для изолированных стилей
+- 📱 **Адаптивный дизайн** (mobile-first)
+- 🚀 **Автоматический деплой** через GitHub Actions
+- 🐳 **Docker** контейнеризация
+- 🔒 **HTTPS** с Let's Encrypt
+- ♿ **Доступность** (a11y)
+- 🎯 **TypeScript** для типобезопасности
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Технологии
 
-## Learn More
+### Frontend
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 15** - React фреймворк
+- **TypeScript** - статическая типизация
+- **CSS Modules** - изоляция стилей
+- **Google Fonts** - оптимизированные шрифты
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Backend & Infrastructure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Docker** - контейнеризация
+- **Nginx** - reverse proxy
+- **Let's Encrypt** - SSL сертификаты
+- **GitHub Actions** - CI/CD пайплайн
 
-## Deploy on Vercel
+### Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **ESLint** - линтинг кода
+- **Git** - контроль версий
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📞 Контакты
+
+Если у вас есть вопросы, предложения по сотрудничеству или вы хотите обсудить проект — буду рад общению!
+
+### 📧 Основные контакты:
+
+- **GitHub:** [Egeny-Myasnikov](https://github.com/Egeny-Myasnikov)
+- **Telegram:** [@ТвойTelegram](https://t.me/fljenya)
+- **Портфолио:** [e-myasnikov.ru](https://e-myasnikov.ru)
+
+### 💼 Профессиональные сети:
+
+- **HeadHunter:** [Профиль HH](https://irkutsk.hh.ru/resume/4b1e810cff086a52570039ed1f584d64763272)
+- **Habr Career:** [Профиль Хабр](https://career.habr.com/fljenya)
+
+### 🗣️ Предпочитаемые способы связи:
+
+**Telegram** - для быстрых вопросов и обсуждений
+
+### 🤝 Сотрудничество:
+
+Открыт к:
+
+- 💼 **Удаленной работе** на позицию Frontend Developer
+- 🤝 **Фриланс проектам** на React/Next.js
+- 🚀 **Совместным проектам** и стартапам
+- 📚 **Менторству** и обмену опытом
+
+---
+
+_Не стесняйтесь писать — всегда рад новым знакомствам и интересным проектам!_ ✨
