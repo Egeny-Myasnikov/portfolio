@@ -1,8 +1,8 @@
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
-import Skills from './components/Skills/Skills'
-import Projects from './components/Projects/Projects'
-import Contact from './components/Contact/Contact'
+import Contact from './components/contact/Contact'
+import Header from './components/header/Header'
+import Hero from './components/hero/Hero'
+import Projects from './components/projects/Projects'
+import Skills from './components/skills/Skills'
 
 export default function Home() {
 	return (
