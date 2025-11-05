@@ -3,8 +3,8 @@
 
 body {
 	font-family: var(--font-primary);
-	color: var(--color-text);
-	background-color: var(--color-background);
+	color: var(--color-main-text);
+	background-color: var(--color-white);
 	line-height: 1.6;
 }
 
@@ -12,6 +12,7 @@ body {
 	max-width: var(--container-max-width);
 	margin: 0 auto;
 	padding: 0 var(--container-padding);
+	overflow: hidden;
 }
 
 .section {
@@ -46,14 +47,14 @@ p {
 }
 
 :focus-visible {
-	outline: 2px solid var(--color-primary);
+	outline: 2px solid var(--color-primary-600);
 	outline-offset: 2px;
 	border-radius: var(--radius-sm);
 }
 
 ::selection {
-	background-color: var(--color-blue-200);
-	color: var(--color-text);
+	background-color: var(--color-primary-200);
+	color: var(--color-neutral-900);
 }
 
 ::-webkit-scrollbar {
@@ -61,19 +62,19 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-	background: var(--color-gray-100);
+	background: var(--color-neutral-100);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--color-gray-400);
+	background: var(--color-neutral-400);
 	border-radius: var(--radius-md);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--color-gray-500);
+	background: var(--color-neutral-500);
 }
 
-@media (max-width: 768px) {
+@media (max-width: var(--medium-screen)) {
 	:root {
 		--container-padding: 1rem;
 	}
@@ -91,7 +92,7 @@ p {
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: var(--narrow-screen)) {
 	h1 {
 		font-size: 1.875rem;
 	}

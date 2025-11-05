@@ -38,6 +38,6 @@ export const skills: Skill[] = [
 
 export const contactInfo: ContactInfo = {
 	email: 'fl-jenya@yandex.ru',
-	telegram: '@ТвойTelegram',
+	telegram: '@fljenya',
 	github: 'Egeny-Myasnikov',
 }

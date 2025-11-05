@@ -1,6 +1,6 @@
 .projects {
 	padding: var(--space-3xl) 0;
-	background-color: var(--color-background-alt);
+	background-color: var(--color-main-3);
 }
 
 .container {
@@ -14,7 +14,7 @@
 	font-weight: 700;
 	text-align: center;
 	margin-bottom: var(--space-2xl);
-	color: var(--color-text);
+	color: var(--color-main-4);
 }
 
 .grid {
@@ -24,7 +24,7 @@
 }
 
 .project {
-	background-color: var(--color-background);
+	background-color: var(--color-main-5);
 	border-radius: var(--radius-lg);
 	box-shadow: var(--shadow-md);
 	overflow: hidden;
@@ -43,11 +43,11 @@
 	font-size: 1.25rem;
 	font-weight: 600;
 	margin-bottom: var(--space-md);
-	color: var(--color-text);
+	color: var(--color-main-3);
 }
 
 .description {
-	color: var(--color-text-light);
+	color: var(--color-main-2);
 	margin-bottom: var(--space-lg);
 	line-height: 1.6;
 }
@@ -61,8 +61,8 @@
 
 .tech {
 	padding: var(--space-xs) var(--space-sm);
-	background-color: var(--color-blue-100);
-	color: var(--color-blue-800);
+	background-color: var(--color-main-2);
+	color: var(--color-brand-normal);
 	border-radius: var(--radius-sm);
 	font-size: 0.875rem;
 	font-weight: 500;
@@ -74,21 +74,21 @@
 }
 
 .link {
-	color: var(--color-text-light);
-	transition: color var(--transition-fast);
+	color: var(--color-main);
+	transition: color var(--transition-normal);
 }
 
 .link:hover {
-	color: var(--color-primary);
+	color: var(--color-main-4);
 }
 
 .linkPrimary {
-	color: var(--color-primary);
-	transition: color var(--transition-fast);
+	color: var(--color-main);
+	transition: color var(--transition-normal);
 }
 
 .linkPrimary:hover {
-	color: var(--color-primary-hover);
+	color: var(--color-main-4);
 }
 
 @media (max-width: 768px) {
