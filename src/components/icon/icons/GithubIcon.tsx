@@ -1,17 +1,11 @@
-import { SVGProps } from 'react'
-
-export interface GithubIconProps extends SVGProps<SVGSVGElement> {
-	color?: string
-	height?: number | string
-	width?: number | string
-}
+import { TypesIconProps } from './typesIcon'
 
 export const GithubIcon = ({
 	color = 'currentColor',
 	height = 24,
 	width = 24,
 	...props
-}: GithubIconProps) => {
+}: TypesIconProps) => {
 	return (
 		<svg
 			width={width}

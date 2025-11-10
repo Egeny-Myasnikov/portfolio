@@ -1,47 +1,58 @@
 import { projects } from '@/data/portfolio-data'
-import styles from './projects.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
+import { TitleSection } from '../titleSection/TitleSection'
+import s from './projects.module.css'
 
 export default function Projects() {
 	return (
-		<section id='projects' className={styles.projects}>
-			<div className={styles.container}>
-				<h2 className={styles.title}>Проекты</h2>
+		<section id='projects' className={s.projects}>
+			<div className={`${s.container} container`}>
+				<TitleSection variant={'secondary'}>Проекты</TitleSection>
 
-				<div className={styles.grid}>
+				<div className={s.grid}>
 					{projects.map(project => (
-						<div key={project.id} className={styles.project}>
-							<div className={styles.content}>
-								<h3 className={styles.projectTitle}>{project.title}</h3>
-								<p className={styles.description}>{project.description}</p>
+						<div key={project.id} className={s.project}>
+							{project.images && (
+								<Image
+									className={`${s.bgImg}`}
+									fill
+									alt=''
+									src={project.images[0]}
+								/>
+							)}
+							<div className={s.content}>
+								<h3 className={s.projectTitle}>{project.title}</h3>
+								<p className={s.description}>{project.description}</p>
 
-								<div className={styles.technologies}>
+								<div className={s.technologies}>
 									{project.technologies.map(tech => (
-										<span key={tech} className={styles.tech}>
+										<span key={tech} className={s.tech}>
 											{tech}
 										</span>
 									))}
 								</div>
 
-								<div className={styles.links}>
+								<div className={s.links}>
 									{project.githubUrl && (
-										<a
+										<Link
 											href={project.githubUrl}
 											target='_blank'
 											rel='noopener noreferrer'
-											className={styles.link}
+											className={s.link}
 										>
 											GitHub
-										</a>
+										</Link>
 									)}
 									{project.liveUrl && (
-										<a
+										<Link
 											href={project.liveUrl}
 											target='_blank'
 											rel='noopener noreferrer'
-											className={styles.linkPrimary}
+											className={s.linkPrimary}
 										>
 											Live Demo
-										</a>
+										</Link>
 									)}
 								</div>
 							</div>

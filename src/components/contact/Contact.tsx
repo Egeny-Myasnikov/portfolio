@@ -1,41 +1,43 @@
 import { contactInfo } from '@/data/portfolio-data'
-import styles from './contact.module.css'
+import s from './contact.module.css'
+import Link from 'next/link'
+import { TitleSection } from '../titleSection/TitleSection'
 
 export default function Contact() {
 	return (
-		<section id='contact' className={styles.contact}>
-			<div className={styles.container}>
-				<h2 className={styles.title}>Связаться со мной</h2>
+		<section id='contact' className={s.contact}>
+			<div className={`container`}>
+				<TitleSection>Связаться со мной</TitleSection>
 
-				<div className={styles.content}>
-					<div className={styles.info}>
-						<div className={styles.contactItem}>
-							<label className={styles.label}>Email</label>
-							<a href={`mailto:${contactInfo.email}`} className={styles.link}>
+				<div className={s.content}>
+					<div className={s.info}>
+						<div className={s.contactItem}>
+							<label className={s.label}>Email</label>
+							<a href={`mailto:${contactInfo.email}`} className={s.link}>
 								{contactInfo.email}
 							</a>
 						</div>
 
-						<div className={styles.contactItem}>
-							<label className={styles.label}>GitHub</label>
-							<a
+						<div className={s.contactItem}>
+							<label className={s.label}>GitHub</label>
+							<Link
 								href={`https://github.com/${contactInfo.github}`}
 								target='_blank'
 								rel='noopener noreferrer'
-								className={styles.link}
+								className={s.link}
 							>
 								{contactInfo.github}
-							</a>
+							</Link>
 						</div>
 
 						{contactInfo.telegram && (
-							<div className={styles.contactItem}>
-								<label className={styles.label}>Telegram</label>
+							<div className={s.contactItem}>
+								<label className={s.label}>Telegram</label>
 								<a
 									href={`https://t.me/${contactInfo.telegram.replace('@', '')}`}
 									target='_blank'
 									rel='noopener noreferrer'
-									className={styles.link}
+									className={s.link}
 								>
 									{contactInfo.telegram}
 								</a>

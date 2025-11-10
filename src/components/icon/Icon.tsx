@@ -1,19 +1,21 @@
 import { ComponentType, SVGProps } from 'react'
+import { ArrowRightIcon } from './icons/ArrowRightIcon'
+import { BadgeIcon } from './icons/BadgeIcon'
 import { GithubIcon } from './icons/GithubIcon'
 import { LogoIcon } from './icons/LogoIcon'
-import { BadgeIcon } from './icons/BadgeIcon'
+import { MoonIcon } from './icons/MoonIcon'
+import { SunIcon } from './icons/SunIcon'
 import { TelegramIcon } from './icons/TelegramIcon'
-import { ArrowRightIcon } from './icons/ArrowRightIcon'
 
-// Тип для доступных иконок
 export type IconName =
 	| 'LogoIcon'
 	| 'GithubIcon'
 	| 'TelegramIcon'
 	| 'BadgeIcon'
 	| 'ArrowRightIcon'
+	| 'MoonIcon'
+	| 'SunIcon'
 
-// Тип для пропсов иконки
 export interface IconProps extends SVGProps<SVGSVGElement> {
 	name: IconName
 	width?: number
@@ -21,16 +23,16 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
 	color?: string
 }
 
-// Тип для компонента иконки
 type IconComponent = ComponentType<SVGProps<SVGSVGElement>>
 
-// Объект с иконками
 const icons: Record<IconName, IconComponent> = {
 	LogoIcon,
 	GithubIcon,
 	TelegramIcon,
 	BadgeIcon,
 	ArrowRightIcon,
+	MoonIcon,
+	SunIcon,
 }
 
 export const Icon = ({

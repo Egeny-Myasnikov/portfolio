@@ -1,20 +1,6 @@
 .projects {
-	padding: var(--space-3xl) 0;
-	background-color: var(--color-main-3);
-}
-
-.container {
-	max-width: var(--container-max-width);
-	margin: 0 auto;
-	padding: 0 var(--container-padding);
-}
-
-.title {
-	font-size: 2.25rem;
-	font-weight: 700;
-	text-align: center;
-	margin-bottom: var(--space-2xl);
-	color: var(--color-main-4);
+	padding: 128px 0px;
+	background-color: var(--color-bg-1);
 }
 
 .grid {
@@ -24,30 +10,48 @@
 }
 
 .project {
-	background-color: var(--color-main-5);
+	min-width: 350px;
+	min-height: 350px;
+	position: relative;
+	background-color: var(--color-bg-2);
+	color: var(--color-text-2);
 	border-radius: var(--radius-lg);
 	box-shadow: var(--shadow-md);
 	overflow: hidden;
-	transition: box-shadow var(--transition-normal);
 }
 
-.project:hover {
-	box-shadow: var(--shadow-lg);
+@media (hover: hover) {
+	.project:hover {
+		box-shadow: var(--shadow-lg);
+	}
 }
 
 .content {
+	z-index: 2;
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
 	padding: var(--space-xl);
 }
 
+.bgImg {
+	z-index: 1;
+	opacity: 0.2;
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 .projectTitle {
-	font-size: 1.25rem;
-	font-weight: 600;
+	font-size: var(--font-size-2md);
+	font-weight: bold;
 	margin-bottom: var(--space-md);
-	color: var(--color-main-3);
 }
 
 .description {
-	color: var(--color-main-2);
 	margin-bottom: var(--space-lg);
 	line-height: 1.6;
 }
@@ -61,8 +65,8 @@
 
 .tech {
 	padding: var(--space-xs) var(--space-sm);
-	background-color: var(--color-main-2);
-	color: var(--color-brand-normal);
+	background-color: var(--color-secondary);
+	color: var(--color-black);
 	border-radius: var(--radius-sm);
 	font-size: 0.875rem;
 	font-weight: 500;
@@ -74,21 +78,25 @@
 }
 
 .link {
-	color: var(--color-main);
+	color: var(--color-text-2);
 	transition: color var(--transition-normal);
 }
 
-.link:hover {
-	color: var(--color-main-4);
+@media (hover: hover) {
+	.link:hover {
+		color: var(--color-text-2);
+	}
 }
 
 .linkPrimary {
-	color: var(--color-main);
+	color: var(--color-text-2);
 	transition: color var(--transition-normal);
 }
 
-.linkPrimary:hover {
-	color: var(--color-main-4);
+@media (hover: hover) {
+	.linkPrimary:hover {
+		color: var(--color-text-2);
+	}
 }
 
 @media (max-width: 768px) {

@@ -1,12 +1,6 @@
 .contact {
-	padding: var(--space-3xl) 0;
-	background-color: var(--color-main-4);
-}
-
-.container {
-	max-width: var(--container-max-width);
-	margin: 0 auto;
-	padding: 0 var(--container-padding);
+	padding: 128px 0px;
+	background-color: var(--color-bg-2);
 }
 
 .title {
@@ -20,7 +14,7 @@
 .content {
 	max-width: 400px;
 	margin: 0 auto;
-	background-color: var(--color-main);
+	background-color: var(--color-bg-1);
 	border-radius: var(--radius-lg);
 	padding: var(--space-2xl);
 }
@@ -48,8 +42,10 @@
 	transition: color var(--transition-normal);
 }
 
-.link:hover {
-	color: var(--color-brand-light);
+@media (hover: hover) {
+	.link:hover {
+		color: var(--color-brand-light);
+	}
 }
 
 @media (max-width: 768px) {

@@ -1,7 +1,9 @@
 'use client'
 
 import { skills } from '@/data/portfolio-data'
-import styles from './skills.module.css'
+import { ProgressBar } from '../progressBar/ProgressBar'
+import { TitleSection } from '../titleSection/TitleSection'
+import s from './skills.module.css'
 
 export default function Skills() {
 	const categories = {
@@ -11,29 +13,25 @@ export default function Skills() {
 	}
 
 	return (
-		<section id='skills' className={styles.skills}>
-			<div className={styles.container}>
-				<h2 className={styles.title}>Навыки</h2>
+		<section id='skills' className={`${s.skills}`}>
+			<div className={`${s.container} container`}>
+				<TitleSection variant={'primary'}> Навыки </TitleSection>
 
-				<div className={styles.grid}>
+				<div className={s.grid}>
 					{Object.entries(categories).map(([key, categoryTitle]) => (
-						<div key={key} className={styles.category}>
-							<h3 className={styles.categoryTitle}>{categoryTitle}</h3>
-							<div className={styles.skillsList}>
+						<div key={key} className={s.category}>
+							<h3 className={s.categoryTitle}>{categoryTitle}</h3>
+							<div className={s.skillsList}>
 								{skills
 									.filter(skill => skill.category === key)
 									.map(skill => (
-										<div key={skill.name} className={styles.skill}>
-											<div className={styles.skillHeader}>
-												<span className={styles.skillName}>{skill.name}</span>
-												<span className={styles.skillLevel}>
-													{skill.level}%
-												</span>
-											</div>
-											<div className={styles.progressBar}>
-												<div
-													className={styles.progressFill}
-													style={{ width: `${skill.level}%` }}
+										<div key={skill.name} className={s.skill}>
+											<div className={s.skillHeader}>
+												<span className={s.skillName}>{skill.name}</span>
+												<span className={s.skillLevel}>{skill.level}%</span>
+												<ProgressBar
+													fillPercentage={skill.level}
+													className={`${s.skillProgressBar}`}
 												/>
 											</div>
 										</div>

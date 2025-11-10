@@ -1,4 +1,4 @@
-import { Project, Skill, ContactInfo } from '@/types/portfolio'
+import { ContactInfo, Project, Skill } from '@/types/portfolio'
 
 export const projects: Project[] = [
 	{
@@ -6,6 +6,11 @@ export const projects: Project[] = [
 		title: 'Аутентификация Full-Stack',
 		description: 'Система аутентификации с Next.js, NestJS, PostgreSQL и Redis',
 		technologies: ['Next.js', 'NestJS', 'PostgreSQL', 'Redis', 'Docker'],
+		images: [
+			'/projects/fullAuth/homePage.png',
+			'/projects/fullAuth/login.png',
+			'/projects/fullAuth/register.png',
+		],
 		githubUrl: 'https://github.com/Egeny-Myasnikov/auth-nestjs-server',
 	},
 	{
@@ -14,6 +19,7 @@ export const projects: Project[] = [
 		description: 'Персональный сайт-портфолио с автоматическим деплоем',
 		technologies: ['Next.js 15', 'TypeScript', 'Docker', 'GitHub Actions'],
 		liveUrl: 'https://e-myasnikov.ru',
+		images: ['/projects/portfolio/portfolio.png'],
 	},
 ]
 

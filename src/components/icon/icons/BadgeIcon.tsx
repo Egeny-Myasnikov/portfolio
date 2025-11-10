@@ -1,17 +1,11 @@
-import { SVGProps } from 'react'
-
-export interface BadgeIconProps extends SVGProps<SVGSVGElement> {
-	color?: string
-	height?: number | string
-	width?: number | string
-}
+import { TypesIconProps } from './typesIcon'
 
 export const BadgeIcon = ({
 	color = 'currentColor',
 	height = 24,
 	width = 24,
 	...props
-}: BadgeIconProps) => {
+}: TypesIconProps) => {
 	return (
 		<svg
 			width={width}
