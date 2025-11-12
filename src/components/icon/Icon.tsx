@@ -1,6 +1,7 @@
 import { ComponentType, SVGProps } from 'react'
 import { ArrowRightIcon } from './icons/ArrowRightIcon'
 import { BadgeIcon } from './icons/BadgeIcon'
+import { EmailIcon } from './icons/EmailIcon'
 import { GithubIcon } from './icons/GithubIcon'
 import { LogoIcon } from './icons/LogoIcon'
 import { MoonIcon } from './icons/MoonIcon'
@@ -15,6 +16,7 @@ export type IconName =
 	| 'ArrowRightIcon'
 	| 'MoonIcon'
 	| 'SunIcon'
+	| 'EmailIcon'
 
 export interface IconProps extends SVGProps<SVGSVGElement> {
 	name: IconName
@@ -33,6 +35,7 @@ const icons: Record<IconName, IconComponent> = {
 	ArrowRightIcon,
 	MoonIcon,
 	SunIcon,
+	EmailIcon,
 }
 
 export const Icon = ({

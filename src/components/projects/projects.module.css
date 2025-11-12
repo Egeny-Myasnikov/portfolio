@@ -4,14 +4,15 @@
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	display: flex;
+	flex-wrap: wrap;
 	gap: var(--space-xl);
 }
 
 .project {
+	flex: 1;
 	min-width: 350px;
-	min-height: 350px;
+	min-height: 550px;
 	position: relative;
 	background-color: var(--color-bg-2);
 	color: var(--color-text-2);
@@ -27,6 +28,9 @@
 }
 
 .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	z-index: 2;
 	position: absolute;
 	inset: 0;
@@ -73,34 +77,57 @@
 }
 
 .links {
+	justify-self: flex-end;
+	font-size: var(--font-size-sm);
+	margin-top: var(--space-xl);
 	display: flex;
-	gap: var(--space-md);
+	gap: var(--gap-md);
 }
-
 .link {
-	color: var(--color-text-2);
-	transition: color var(--transition-normal);
-}
+	position: relative;
+	padding: var(--space-sm);
+	transition: letter-spacing var(--transition-normal) 0.1s;
 
-@media (hover: hover) {
-	.link:hover {
-		color: var(--color-text-2);
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 10%;
+		height: 1px;
+		background: currentColor;
+		transition: width var(--transition-normal);
+	}
+	&:focus-visible {
+		letter-spacing: 2px;
+	}
+	&:focus-visible::before {
+		width: 100%;
 	}
 }
-
-.linkPrimary {
-	color: var(--color-text-2);
-	transition: color var(--transition-normal);
-}
-
 @media (hover: hover) {
-	.linkPrimary:hover {
-		color: var(--color-text-2);
+	.link:hover::before {
+		width: 100%;
+	}
+	.link:hover {
+		letter-spacing: 2px;
 	}
 }
 
 @media (max-width: 768px) {
 	.grid {
 		grid-template-columns: 1fr;
+	}
+	.project {
+		min-width: 200px;
+		min-height: 600px;
+	}
+
+	.links {
+		font-size: var(--font-size-sm);
+		margin-top: var(--space-xl);
+		display: flex;
+		flex-direction: column;
+		gap: var(--gap-md);
 	}
 }

@@ -2,8 +2,9 @@
 :root[data-theme='light'] {
 	/* Цвета из макета */
 	--color-red: #fb5b46;
-	--color-primary: #fcdb74;
+	--color-primary: #f0ffef;
 	--color-secondary: #584b8c;
+	--rgb-color-secondary: 88, 75, 140;
 	--color-black: #24222d;
 	--rgb-color-black: 36, 34, 45; /* alpha 0.75*/
 	--color-white: #fafafa;
@@ -15,21 +16,6 @@
 	--color-bg-2: var(--color-black);
 	--color-text-2: var(--color-white);
 	--color-border: var(--rgb-color-black);
-
-	/* Base colors */
-	--color1: #3a6a6f;
-	--color2: #6ac3c6;
-
-	/* Primary scale */
-	--color-main: #ffffff;
-	--color-main-2: #f0f0ff;
-	--color-main-3: #e0e0f0;
-	--color-main-4: #4444cc;
-	--color-main-5: #222288;
-	--color-main-header: #3333aa;
-	--color-main-text: #1a1a2f;
-	--rgb-color-main-text: 26, 26, 47;
-	--color-border: #b8b8e0;
 
 	/* Shadows */
 	--shadow-sm: 0 1px 2px 0 var(--color-shadow);
@@ -45,7 +31,9 @@
 	--medium-screen: 768px;
 	/* Font families */
 	--font-primary: var(--font-inter);
+	--font-numbers: var(--font-leagueSpartan);
 	--font-mono: var(--font-roboto-mono);
+	--font-title: var(--font-rubik);
 
 	/* Font sizes */
 	--font-size-xs: 12px;
@@ -111,6 +99,7 @@
 	--color-red: #fb5b46;
 	--color-primary: #64989d;
 	--color-secondary: #12f7d6;
+	--rgb-color-secondary: 18, 247, 214;
 	--color-black: #24222d;
 	--rgb-color-black: 36, 34, 45; /* alpha 0.75*/
 	--color-white: #fafafa;
@@ -118,24 +107,10 @@
 
 	--color-bg-1: var(--color-black);
 	--color-text-1: var(--color-white);
-	--rgb-color-text-1: var(--rgb-color-white);
+	--rgb-color-text-1: var(--rgb-color-black);
 	--color-bg-2: var(--color-primary);
-	--color-text-2: var(--color-white);
+	--color-text-2: var(--color-black);
 	--color-border: var(--rgb-color-white);
-
-	/* Base colors */
-	--color1: #64989d;
-	--color2: #bce3e6;
-
-	/* Primary scale */
-	--color-main: #2b2b3f;
-	--color-main-2: #333366;
-	--color-main-3: #05052f;
-	--color-main-4: #bcbcfc;
-	--color-main-5: #eeeefc;
-	--color-main-header: #333366;
-	--color-main-text: #d4d9db;
-	--rgb-color-main-text: 188, 188, 252;
 }
 
 /* @media (max-width: 768px) {

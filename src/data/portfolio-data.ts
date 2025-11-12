@@ -21,6 +21,21 @@ export const projects: Project[] = [
 		liveUrl: 'https://e-myasnikov.ru',
 		images: ['/projects/portfolio/portfolio.png'],
 	},
+	{
+		id: 3,
+		title: 'Taskana App ',
+		description: 'Список задач',
+		technologies: ['React 19', 'GitHub', 'Vercel'],
+		liveUrl: 'https://taskana-app-phi.vercel.app/',
+		githubUrl: 'https://github.com/Egeny-Myasnikov/taskana-app',
+		images: [
+			'/projects/taskanaApp/taskana1-dark.png',
+			'/projects/taskanaApp/taskana1-light.png',
+			'/projects/taskanaApp/taskana2-dark.png',
+			'/projects/taskanaApp/taskana2-light.png',
+			'/projects/taskanaApp/taskana3-light.png',
+		],
+	},
 ]
 
 export const skills: Skill[] = [

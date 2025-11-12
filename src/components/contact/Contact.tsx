@@ -2,6 +2,7 @@ import { contactInfo } from '@/data/portfolio-data'
 import s from './contact.module.css'
 import Link from 'next/link'
 import { TitleSection } from '../titleSection/TitleSection'
+import { SocBar } from '../socBar/SocBar'
 
 export default function Contact() {
 	return (

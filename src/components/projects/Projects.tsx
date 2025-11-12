@@ -41,7 +41,7 @@ export default function Projects() {
 											rel='noopener noreferrer'
 											className={s.link}
 										>
-											GitHub
+											Код на GitHub
 										</Link>
 									)}
 									{project.liveUrl && (
@@ -49,9 +49,9 @@ export default function Projects() {
 											href={project.liveUrl}
 											target='_blank'
 											rel='noopener noreferrer'
-											className={s.linkPrimary}
+											className={s.link}
 										>
-											Live Demo
+											Посмотреть демо
 										</Link>
 									)}
 								</div>

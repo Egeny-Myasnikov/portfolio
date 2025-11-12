@@ -1,4 +1,6 @@
 .titleSection {
+	font-family: var(--font-title), serif;
+	letter-spacing: 4px;
 	font-size: var(--font-size-2md);
 	font-weight: bold;
 	display: flex;
@@ -10,7 +12,7 @@
 	color: var(--color-text-2);
 }
 .secondary {
-	color: var(--color-text-2);
+	color: var(--color-text-1);
 }
 .titleIcon {
 	width: 32px;

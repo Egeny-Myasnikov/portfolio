@@ -28,17 +28,8 @@ body {
 	color: var(--color-text-1);
 	background-color: var(--color-bg-1);
 	line-height: 1.6;
-}
-
-.container {
-	max-width: var(--container-max-width);
-	margin: 0 auto;
-	padding: var(--container-padding);
-	overflow: hidden;
-}
-
-.section {
-	padding: var(--space-3xl) 0;
+	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 h1,
@@ -69,14 +60,14 @@ p {
 }
 
 :focus-visible {
-	outline: 2px solid var(--color-primary-600);
+	outline: 2px solid var(--color-white);
 	outline-offset: 2px;
 	border-radius: var(--radius-sm);
 }
 
 ::selection {
-	background-color: var(--color-main-2);
-	color: var(--color-main-5);
+	background-color: var(--color-secondary);
+	color: var(--color-text-2);
 }
 
 ::-webkit-scrollbar {
@@ -84,42 +75,65 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-	background: var(--color-main-3);
+	background: var(--color-text-2);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--color-main-5);
+	background: var(--color-secondary);
 	border-radius: var(--radius-md);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--color-main-4);
+	background: var(--color-red);
 }
 
-@media (max-width: var(--medium-screen)) {
-	:root {
-		--container-padding: 1rem;
-	}
-
-	h1 {
-		font-size: 2.25rem;
-	}
-
-	h2 {
-		font-size: 1.875rem;
-	}
-
-	.section {
-		padding: var(--space-2xl) 0;
-	}
+/* classes */
+.container {
+	max-width: var(--container-max-width);
+	margin: 0 auto;
+	padding: var(--container-padding);
+	overflow-x: hidden;
 }
 
-@media (max-width: var(--narrow-screen)) {
-	h1 {
-		font-size: 1.875rem;
-	}
+.section {
+	padding: var(--space-3xl) 0;
+}
 
-	h2 {
-		font-size: 1.5rem;
+.not-found-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	gap: 20px;
+	color: var(--color-red);
+}
+.not-found-page__error {
+	letter-spacing: 7px;
+	font-size: 5em;
+}
+.not-found-page__title {
+	font-size: 4em;
+}
+
+.page-transition {
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	border-radius: var(--radius-md);
+	min-height: 80vh;
+	opacity: 1;
+	animation: afa 1s ease-in-out;
+}
+
+/* animations */
+@keyframes afa {
+	from {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
