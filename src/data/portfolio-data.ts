@@ -40,7 +40,7 @@ export const projects: Project[] = [
 	{
 		id: 4,
 		title: 'Портфолио сайт',
-		description: 'Персональный сайт-портфолио с автоматическим деплоем',
+		description: 'Персональный сайт-портфолио с автоматическим деплоем на vps',
 		technologies: ['Next.js 15', 'TypeScript', 'Docker', 'GitHub Actions'],
 		liveUrl: 'https://e-myasnikov.ru',
 		images: ['/projects/portfolio/portfolio.png'],
