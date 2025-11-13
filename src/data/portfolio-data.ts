@@ -15,11 +15,12 @@ export const projects: Project[] = [
 	},
 	{
 		id: 2,
-		title: 'Портфолио сайт',
-		description: 'Персональный сайт-портфолио с автоматическим деплоем',
-		technologies: ['Next.js 15', 'TypeScript', 'Docker', 'GitHub Actions'],
-		liveUrl: 'https://e-myasnikov.ru',
-		images: ['/projects/portfolio/portfolio.png'],
+		title: 'Наши люди',
+		description: 'Сайт event агентства',
+		technologies: ['Next 14', 'Zustand', 'GitHub', 'Vercel'],
+		liveUrl: 'https://event-agency-our-people.vercel.app/',
+		githubUrl: 'https://github.com/Egeny-Myasnikov/event-agency-our-people',
+		images: ['/projects/our_people/our_people.png'],
 	},
 	{
 		id: 3,
@@ -35,6 +36,14 @@ export const projects: Project[] = [
 			'/projects/taskanaApp/taskana2-light.png',
 			'/projects/taskanaApp/taskana3-light.png',
 		],
+	},
+	{
+		id: 4,
+		title: 'Портфолио сайт',
+		description: 'Персональный сайт-портфолио с автоматическим деплоем',
+		technologies: ['Next.js 15', 'TypeScript', 'Docker', 'GitHub Actions'],
+		liveUrl: 'https://e-myasnikov.ru',
+		images: ['/projects/portfolio/portfolio.png'],
 	},
 ]
 
